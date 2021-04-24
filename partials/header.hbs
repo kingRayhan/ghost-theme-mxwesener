@@ -1,0 +1,50 @@
+<div style="background-image: url({{ @site.cover_image }});" class="bg-top bg-no-repeat bg-cover overlay ">
+    <div class="relative z-50 flex flex-col items-end justify-between mx-auto wrapper {{#is " home"}}py-12
+        min-h-[680px]{{/is}}">
+        <div class="flex justify-between w-full py-5 mx-auto text-white">
+            <a href="{{ @site.url }}" class="text-2xl font-bold ">
+                {{@site.title}}
+            </a>
+            <div class="hidden md:block">
+                {{navigation}}
+            </div>
+            
+            <div class="block  md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </div>
+        </div>
+
+        {{#is "home"}}
+        {{!-- call to action --}}
+        <div class="flex flex-col items-end text-center w-[409px] -mt-4">
+            <svg width="48" height="61" viewBox="0 0 48 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M36.7184 6.5L38.2098 6.55645L38.2098 6.55645L36.7184 6.5ZM37.9529 0.974497C37.3895 0.364034 36.4452 0.328287 35.8437 0.894659L26.0427 10.1242C25.4413 10.6905 25.4104 11.6446 25.9738 12.255C26.5372 12.8655 27.4815 12.9012 28.083 12.3349L36.795 4.13084L44.9559 12.9736C45.5193 13.584 46.4636 13.6198 47.065 13.0534C47.6665 12.4871 47.6973 11.533 47.1339 10.9226L37.9529 0.974497ZM38.2098 6.55645L38.3552 2.05645L35.3725 1.94355L35.227 6.44354L38.2098 6.55645ZM1.5777 60.1426C23.1373 51.0997 37.4465 30.1678 38.2098 6.55645L35.227 6.44354C34.5018 28.8771 20.9064 48.7648 0.422299 57.3566L1.5777 60.1426Z"
+                    fill="#F2F2F2" />
+            </svg>
+            <p class="text-white font-rock-salt">Please feel free to get in touch, I would love to have a chat with you!
+            </p>
+        </div>
+
+        <div>
+            <div class="w-4/12 text-white">
+                <h1 class="mb-3 text-3xl font-bold">Hi, I’m Max.</h1>
+
+                <p class="mb-5 text-2xl font-bold">Let’s explore how to create the life we want to live, by
+                    investigating
+                    human nature,
+                    designing our life, implementing
+                    change, supporting each other, and making personal growth a priority.</p>
+
+                <p class="text-2xl font-bold ">99% of my content is free, so please extract as much value from it as you
+                    can!
+                    Join my
+                    spam-free newsletter here to
+                    never miss any content.</p>
+            </div>
+        </div>
+        {{/is}}
+    </div>
+</div>

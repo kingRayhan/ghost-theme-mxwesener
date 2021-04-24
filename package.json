@@ -1,0 +1,29 @@
+{
+  "name": "mxwesener-theme",
+  "version": "1.0.0",
+  "author": {
+    "name": "omarfaruk77",
+    "email": "fomar008@gmail.com",
+    "url": "https://curiousbiker.com"
+  },
+  "keywords": [
+    "ghost",
+    "blog",
+    "ghost-theme"
+  ],
+  "ghost-api": "v4",
+  "scripts": {
+    "dev": "NODE_ENV=development postcss theme.src.css -o ./assets/css/theme.css -w",
+    "build": "NODE_ENV=production postcss theme.src.css -o ./assets/css/theme.css"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.12",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.1"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.0"
+  }
+}

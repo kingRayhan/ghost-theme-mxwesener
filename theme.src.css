@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+@font-face {
+  font-family: "Futura Condensed";
+  src: url("../fonts/FuturaCondMedium.woff") format("woff"),
+    url("../fonts/FuturaCondMedium.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Futura Condensed";
+  src: url("../fonts/Futura Condensed Bold.otf") format("otf"),
+    url("../fonts/Futura Condensed Bold.woff") format("woff");
+  font-weight: 500;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #F2F2F2;
+}
+
+.overlay {
+  position: relative;
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.59) 0%,
+    rgba(0, 0, 0, 0.1711) 27.6%,
+    rgba(0, 0, 0, 0) 99.99%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.wrapper {
+  @apply mx-auto w-[1260px] max-w-[95%];
+}
+
+.content p {
+  @apply my-5;
+}
+
+.content h1 {
+  @apply text-xl;
+}
+
+.button {
+  width: 254px;
+  box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.9),
+    4px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 21px;
+}
+
+.button:hover{
+   box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.9),
+    4px 4px 20px rgba(0, 0, 0, 0.15);
+}
