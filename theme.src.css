@@ -19,47 +19,61 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #F2F2F2;
+@layer base {
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f2f2f2;
+  }
 }
 
-.overlay {
-  position: relative;
-}
-.overlay::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.59) 0%,
-    rgba(0, 0, 0, 0.1711) 27.6%,
-    rgba(0, 0, 0, 0) 99.99%,
-    rgba(255, 255, 255, 0) 100%
-  );
-}
-.wrapper {
-  @apply mx-auto w-[1260px] max-w-[95%];
-}
+@layer components {
+  .overlay {
+    position: relative;
+  }
+  .overlay::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.59) 0%,
+      rgba(0, 0, 0, 0.1711) 27.6%,
+      rgba(0, 0, 0, 0) 99.99%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .wrapper {
+    @apply mx-auto w-[1260px] max-w-[95%];
+  }
 
-.content p {
-  @apply my-5;
-}
+  /*========================================
+    Navigation
+  ========================================*/
+  .header-navigation {
+    @apply space-x-4;
+  }
+  .header-navigation a {
+    @apply text-xl font-bold uppercase;
+  }
 
-.content h1 {
-  @apply text-xl;
-}
+  .footer-navigation {
+    @apply space-x-5 text-base text-center underline capitalize;
+  }
 
-.button {
-  width: 254px;
-  box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.9),
-    4px 4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 21px;
-}
-
-.button:hover{
-   box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.9),
-    4px 4px 20px rgba(0, 0, 0, 0.15);
+  
+  /*========================================
+    Button
+  ========================================*/
+  .button {
+    @apply  flex items-center justify-center h-12 mt-5 space-x-2 text-lg font-bold focus:outline-none font-condensed;
+    box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.9),
+      4px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 21px;
+  }
+  
+  .button:hover {
+    box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.9),
+      4px 4px 20px rgba(0, 0, 0, 0.15);
+  }
 }

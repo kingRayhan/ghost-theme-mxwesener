@@ -1,1 +1,49 @@
-<h1>authjor pahe</h1>
+{{!< default}} 
+
+{{#author}}
+<div class="wrapper">
+    <div class="grid grid-cols-3 h-[520px] items-center">
+        <div class="col-span-2 px-10">
+            <h1 class="text-3xl font-bold font-condensed">Hey I am {{name}}, I would love to have a chat with you!</h1>
+            <p class="mt-4 text-2xl font-bold font-condensed">
+                {{bio}}
+            </p>
+        </div>
+        <div>
+            <a href="#" class="button w-[255px]">
+                <span>TWEET AT ME</span>
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24.9166 3.25C23.8792 3.98177 22.7305 4.54145 21.5149 4.9075C20.8625 4.1573 19.9954 3.62558 19.0309 3.38425C18.0664 3.14292 17.051 3.20363 16.1222 3.55816C15.1933 3.91269 14.3957 4.54393 13.8373 5.36653C13.2789 6.18912 12.9866 7.16336 12.9999 8.1575V9.24083C11.0961 9.2902 9.20963 8.86796 7.50851 8.01173C5.80739 7.1555 4.34443 5.89185 3.24992 4.33333C3.24992 4.33333 -1.08341 14.0833 8.66658 18.4167C6.43549 19.9311 3.77767 20.6905 1.08325 20.5833C10.8333 26 22.7499 20.5833 22.7499 8.125C22.7489 7.82324 22.7199 7.52223 22.6632 7.22583C23.7689 6.13545 24.5491 4.75877 24.9166 3.25V3.25Z"
+                        stroke="#403E3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+
+            <a href="#" class="button w-[255px]">
+                <span>SHOOT ME AN EMAIL</span>
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.33341 4.33333H21.6667C22.8584 4.33333 23.8334 5.30833 23.8334 6.49999V19.5C23.8334 20.6917 22.8584 21.6667 21.6667 21.6667H4.33341C3.14175 21.6667 2.16675 20.6917 2.16675 19.5V6.49999C2.16675 5.30833 3.14175 4.33333 4.33341 4.33333Z"
+                        stroke="#403E3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M23.8334 6.5L13.0001 14.0833L2.16675 6.5" stroke="#403E3D" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+
+            <a href="#" class="button w-[255px]">
+                <span>PM ME ON INSTA</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
+                        stroke="#403E3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M16 11.37C16.1234 12.2022 15.9812 13.0522 15.5937 13.799C15.2062 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4077 15.9059C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1902 8.22768 13.4229 8.09402 12.5922C7.96035 11.7615 8.09202 10.9099 8.47028 10.1584C8.84854 9.40685 9.45414 8.79374 10.2009 8.40624C10.9477 8.01874 11.7977 7.87658 12.63 8C13.4789 8.12588 14.2648 8.52146 14.8716 9.1283C15.4785 9.73515 15.8741 10.5211 16 11.37Z"
+                        stroke="#403E3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.5 6.5H17.51" stroke="#403E3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    {{> ad}}
+</div>
+{{/author}}

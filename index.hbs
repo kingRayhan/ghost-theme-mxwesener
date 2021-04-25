@@ -1,17 +1,27 @@
-{{!< default}} <div class="mx-auto my-8 wrapper">
+{{!< default}} 
+
+<div class="mx-auto my-8 wrapper">
     <h1 class="text-3xl font-bold uppercase mt-11 mb-35 font-condensed">My latest content</h1>
+    
     <div class="grid grid-cols-2 gap-12">
         {{#foreach posts}}
-        {{> "article-card"}}
+            {{> "article-card"}}
         {{/foreach}}
-
     </div>
 
     <div class="mt-5 ">
         {{pagination}}
     </div>
 
-    </div>
+</div>
 
 
-    {{> "testimonial"}}
+<div class="grid grid-cols-1 gap-6 my-5 md:my-10 md:gap-20 md:grid-cols-2">
+    <div class="h-48 bg-test"></div>
+    <div class="h-48 bg-test"></div>
+</div>
+
+
+
+
+{{> "testimonial"}}

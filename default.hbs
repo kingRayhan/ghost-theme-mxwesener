@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ meta_title }}</title>
     <link rel="stylesheet" href="{{ asset '/css/theme.css' }}">
-
     {{ghost_head}}
+    
+    {{{block "head"}}}
 </head>
 
 <body class="{{ body_class }}">
     {{> "header"}}
     {{{body}}}
-
     {{> "footer"}}
+    {{{block "footer"}}}
     {{ghost_foot}}
 </body>
-
 </html>
