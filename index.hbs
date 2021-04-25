@@ -1,9 +1,9 @@
 {{!< default}} 
 
 <div class="mx-auto my-8 wrapper">
-    <h1 class="text-3xl font-bold uppercase mt-11 mb-35 font-condensed">My latest content</h1>
+    <h1 class="text-3xl font-bold uppercase mt-11 mb-11 md:mb-35 font-condensed">My latest content</h1>
     
-    <div class="grid grid-cols-2 gap-12">
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
         {{#foreach posts}}
             {{> "article-card"}}
         {{/foreach}}
@@ -14,14 +14,5 @@
     </div>
 
 </div>
-
-
-<div class="grid grid-cols-1 gap-6 my-5 md:my-10 md:gap-20 md:grid-cols-2">
-    <div class="h-48 bg-test"></div>
-    <div class="h-48 bg-test"></div>
-</div>
-
-
-
 
 {{> "testimonial"}}
